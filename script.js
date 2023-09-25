@@ -32,7 +32,7 @@ addTask.addEventListener ('click', () =>{
     }
     // alert or a warning message.
     else {
-        alert('Write task please.')
+        alert('Write your task please.')
     }
 });
 
