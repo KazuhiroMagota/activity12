@@ -3,7 +3,7 @@ let addTask = document.querySelector('#addTask'); //BUTTON
 let taskList = document.querySelector('#taskList'); //UL
 
 
-addTask.addEventListener ('click', function(){
+addTask.addEventListener ('click', () =>{
     if  (todoInput.value) {
         let inputValue = document.createTextNode(todoInput.value); //value of the input field
         let newTask = document.createElement('li'); //new element 'li'
@@ -11,7 +11,7 @@ addTask.addEventListener ('click', function(){
         taskList.appendChild(newTask); // new LI to UL
 
         // Add an click event listener to each li element.
-        newTask.addEventListener('click', function(){
+        newTask.addEventListener('click', ()=>{
             newTask.classList.toggle("taskComplete");
         })
         // Add a delete button (X) next to each task when it's created.
@@ -21,7 +21,7 @@ addTask.addEventListener ('click', function(){
         newTask.appendChild(delBttn);
 
         // Add a click event listener to this button.
-        newTask.addEventListener('click', function(){
+        newTask.addEventListener('click', ()=>{
 
         // When the delete button is clicked, remove the parent li element from the taskList.
             taskList.removeChild(newTask);
