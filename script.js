@@ -21,7 +21,7 @@ addTask.addEventListener ('click', () =>{
         newTask.appendChild(delBttn);
 
         // Add a click event listener to this button.
-        newTask.addEventListener('click', ()=>{
+        delBttn.addEventListener('click', ()=>{
 
         // When the delete button is clicked, remove the parent li element from the taskList.
             taskList.removeChild(newTask);
