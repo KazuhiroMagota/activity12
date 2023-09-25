@@ -1,3 +1,18 @@
 .taskComplete {
     text-decoration: line-through;
 }
+
+.card {
+    width: 25rem;
+
+}
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+   
+}
